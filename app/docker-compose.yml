@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  lighthouse_exporter:
+    restart: unless-stopped
+    image: lighthouse_exporterv1:latest
+    ports:
+      - "9593:9593"
+    volumes:
+      - "./lighthouse_exporter.js:/usr/src/app/lighthouse_exporter.js:ro"
+      - "./lighthouse_config_desktop.js:/usr/src/app/lighthouse_config_desktop.js:ro"
+      - "./lighthouse_config_mobile.js:/usr/src/app/lighthouse_config_mobile.js:ro"
