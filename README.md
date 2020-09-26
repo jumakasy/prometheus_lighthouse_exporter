@@ -1,4 +1,5 @@
-# Prometheus Lighthouse Exporter
+
+# Prometheus Lighthouse Exporter - NEED TO NOTES ABOUT HOW TO USE - THE APP FOLDER HAS THE DOCKER COMPOSE
 
 This is an simple Prometheus Exporter for Lighthouse Performance Data. With this you monitor continuously the Lighthouse Score of your Webpage.
 
